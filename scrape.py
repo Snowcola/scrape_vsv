@@ -41,7 +41,7 @@ def get_entry_list(base_url):
 def gather_entry_data(base_url, ids):
     entry_data = []
     for i, item in enumerate(ids):
-        print(f' Progress: ({i}/{len(ids)})', end='\r', flush=True)
+        print(f' Progress: ({i+1}/{len(ids)})', end='\r', flush=True)
         url = base_url + '?typ=detail&id=' + item
         data = dict()
 
